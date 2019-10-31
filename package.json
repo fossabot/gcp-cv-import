@@ -1,0 +1,83 @@
+{
+  "name": "@matt-riley/gcp-cv-import",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./lib/index.js",
+  "private": false,
+  "bin": {
+    "cvcsv": "./bin/index.js"
+  },
+  "files": [
+    "lib/**/*",
+    "bin/**/*"
+  ],
+  "scripts": {
+    "build": "npm run clean:some && tsc -p .",
+    "clean:lib": "rimraf ./lib",
+    "clean:docs": "rimraf ./docs",
+    "clean:node_modules": "rimraf ./node_modules",
+    "clean:some": "run-p clean:lib clean:docs",
+    "clean": "run-p prettier clean:lib clean:docs clean:node_modules",
+    "start:dev": "ts-node -T src/index.ts",
+    "tscov": "tscov",
+    "tscov:d": "tscov --details",
+    "test": "jest",
+    "typedoc": "typedoc --out docs ./src",
+    "prepare": "npm run build",
+    "prettier": "prettier --parser typescript --write \"src/**/*.ts\"",
+    "lint": "eslint 'src/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matt-riley/gcp-cv-import.git"
+  },
+  "keywords": [
+    "Google Cloud Vision Product Search",
+    "CSV",
+    "CLI",
+    "bulk import"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matt-riley/gcp-cv-import/issues"
+  },
+  "homepage": "https://github.com/matt-riley/gcp-cv-import#readme",
+  "devDependencies": {
+    "@liftr/tscov": "1.4.3",
+    "@types/jest": "24.0.21",
+    "@types/node": "12.12.0",
+    "@typescript-eslint/eslint-plugin": "2.6.0",
+    "@typescript-eslint/parser": "2.6.0",
+    "eslint": "6.6.0",
+    "eslint-config-prettier": "6.5.0",
+    "eslint-plugin-prettier": "3.1.1",
+    "jest": "24.9.0",
+    "npm-run-all": "4.1.5",
+    "prettier": "1.18.2",
+    "rimraf": "3.0.0",
+    "ts-jest": "24.1.0",
+    "ts-node": "8.4.1",
+    "typedoc": "0.15.0",
+    "typescript": "3.6.4"
+  },
+  "dependencies": {
+    "@google-cloud/vision": "1.5.0"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "plugin:@typescript-eslint/recommended",
+      "prettier/@typescript-eslint",
+      "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "tabWidth": 2
+  }
+}
