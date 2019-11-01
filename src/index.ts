@@ -27,7 +27,7 @@ class ImportProductSet {
       any,
       ImportProductSetOperation
     ] = await this.client.importProductSets({
-      parent: this.client.location({ projectId, location }),
+      parent: this.client.locationPath({ projectId, location }),
       inputConfig: {
         gcsSource: {
           csvFileUri: csvUri
