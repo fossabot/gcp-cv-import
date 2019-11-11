@@ -23,17 +23,22 @@ class ImportProductSet {
 
   async import(): Promise<void> {
     const { projectId, location, csvUri, logger } = this.options;
-    const [response, operation]: [
-      any,
-      ImportProductSetOperation
-    ] = await this.client.importProductSets({
-      parent: this.client.locationPath({ projectId, location }),
-      inputConfig: {
-        gcsSource: {
-          csvFileUri: csvUri
+    const parentLocation = this.client.locationPath({ projectId, location });
+    logger.info(parentLocation);
+    let response: any;
+    let operation: ImportProductSetOperation;
+    try {
+      [response, operation] = await this.client.importProductSets({
+        parent: parentLocation,
+        inputConfig: {
+          gcsSource: {
+            csvFileUri: csvUri
+          }
         }
-      }
-    });
+      });
+    } catch (error) {
+      logger.error(error);
+    }
 
     logger.info(`Processing operation name ${operation.name}`);
     const [result] = await response.promise();
