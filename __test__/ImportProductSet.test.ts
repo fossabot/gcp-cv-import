@@ -41,10 +41,7 @@ describe('ImportProductSet', () => {
       subject.import();
     });
     test('function to have called cloud visions locationPath', () => {
-      expect(subject['client'].locationPath).toHaveBeenCalledWith({
-        projectId: 'Foo',
-        location: 'Bar'
-      });
+      expect(subject['client'].locationPath).toHaveBeenCalledWith('Foo', 'Bar');
       expect(subject['client'].locationPath).toHaveReturned();
     });
     test('function to have called cloud visions importProductSets', () => {

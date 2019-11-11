@@ -13,6 +13,7 @@
   ],
   "scripts": {
     "build": "npm run clean:some && tsc -p .",
+    "postbuild": "npm run typedoc",
     "clean:lib": "rimraf ./lib",
     "clean:docs": "rimraf ./docs",
     "clean:node_modules": "rimraf ./node_modules",
