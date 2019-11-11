@@ -25,14 +25,16 @@ class ImportProductSet {
     const { projectId, location, csvUri, logger } = this.options;
     const parentLocation = this.client.locationPath({ projectId, location });
     logger.info(parentLocation);
-    const [response, operation] = await this.client.importProductSets({
-      parent: parentLocation,
-      inputConfig: {
-        gcsSource: {
-          csvFileUri: csvUri
+    const [response, operation] = await this.client
+      .importProductSets({
+        parent: parentLocation,
+        inputConfig: {
+          gcsSource: {
+            csvFileUri: csvUri
+          }
         }
-      }
-    });
+      })
+      .catch((err: any) => logger.error(err));
 
     logger.info(`Processing operation name ${operation.name}`);
     const [result] = await response.promise();
