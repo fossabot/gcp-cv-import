@@ -1,0 +1,16 @@
+name: Merge labelled pull requests
+on:
+  pull_request:
+    types:
+      - labeled
+      - synchronize
+      - opened
+      - edited
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: automerge
+        uses: pascalgn/automerge-action@v0.4.3
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
