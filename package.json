@@ -5,14 +5,15 @@
   "main": "./lib/index.js",
   "private": false,
   "bin": {
-    "cvcsv": "./bin/index.js"
+    "cvcsvimport": "./bin/index.js"
   },
   "files": [
     "lib/**/*",
-    "bin/**/*"
+    "NOTICE"
   ],
   "scripts": {
     "build": "npm run clean:some && tsc -p .",
+    "postbuild": "npm run typedoc",
     "clean:lib": "rimraf ./lib",
     "clean:docs": "rimraf ./docs",
     "clean:node_modules": "rimraf ./node_modules",
@@ -41,11 +42,11 @@
   },
   "homepage": "https://github.com/matt-riley/gcp-cv-import#readme",
   "devDependencies": {
-    "@liftr/tscov": "1.4.3",
+    "@liftr/tscov": "1.4.4",
     "@types/jest": "24.0.22",
     "@types/node": "12.12.7",
-    "@typescript-eslint/eslint-plugin": "2.6.1",
-    "@typescript-eslint/parser": "2.6.1",
+    "@typescript-eslint/eslint-plugin": "2.7.0",
+    "@typescript-eslint/parser": "2.7.0",
     "eslint": "6.6.0",
     "eslint-config-prettier": "6.5.0",
     "eslint-plugin-prettier": "3.1.1",
@@ -71,6 +72,9 @@
     "parserOptions": {
       "ecmaVersion": 2018,
       "sourceType": "module"
+    },
+    "rules": {
+      "@typescript-eslint/no-explicit-any": 0
     }
   },
   "prettier": {
