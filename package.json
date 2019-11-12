@@ -9,7 +9,7 @@
   },
   "files": [
     "lib/**/*",
-    "bin/**/*"
+    "NOTICE"
   ],
   "scripts": {
     "build": "npm run clean:some && tsc -p .",

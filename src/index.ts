@@ -1,24 +1,9 @@
 import vision from '@google-cloud/vision';
-
-interface ImportProductSetOptions {
-  /**
-   * The id of the Google Cloud project - [Docs](https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects)
-   */
-  projectId: string;
-  /**
-   * The GCP location you would like to use, e.g. europe-west1
-   */
-  location: string;
-  /**
-   * The GCP storage URL of the csv file - e.g. gs://your-storage-bucket/name-of-the-csv-file.csv
-   */
-  csvUri: string;
-  /**
-   * Defaults to `console`. Pass any logger into here as long as it has `.info` as a method
-   */
-  logger?: any;
-}
-
+import { ImportProductSetOptions } from './interfaces/ImportProductSetOptions';
+import { ImportProductSetResultStatus } from './interfaces/ImportProductSetResultStatus';
+import { ImportProductSetResult } from './interfaces/ImportProductSetResult';
+import { ImportProductSetResponse } from './interfaces/ImportProductSetResponse';
+import { ImportProductSetOperation } from './interfaces/ImportProductSetOperation';
 export default class ImportProductSet {
   /**
    * Creates a private client of vision.ProductSearchClient.
@@ -36,11 +21,14 @@ export default class ImportProductSet {
     this.options = options;
   }
 
-  async import(): Promise<void> {
+  async import(): Promise<ImportProductSetResult> {
     const { projectId, location, csvUri, logger } = this.options;
     const client = this.client;
-    const parentLocation = await client.locationPath(projectId, location);
-    const [response, operation] = await client.importProductSets({
+    const parentLocation = client.locationPath(projectId, location);
+    const [response, operation]: [
+      ImportProductSetResponse,
+      ImportProductSetOperation
+    ] = await client.importProductSets({
       parent: parentLocation,
       inputConfig: {
         gcsSource: {
@@ -53,15 +41,14 @@ export default class ImportProductSet {
     logger.info('Processing complete');
     logger.info('Processing results:');
 
-    for (const i in result.statuses) {
-      const status = result.statuses[i];
-      logger.info('Status of processing ', i, 'of the csv:', status);
-
-      if (status.code === 0) {
-        logger.info(result.referenceImages[i]);
-      } else {
-        logger.info('No reference image.');
+    result.statuses.forEach(
+      (status: ImportProductSetResultStatus, idx: number) => {
+        logger.info(`Status of processing line ${idx} of the csv.`);
+        status.code === 0
+          ? logger.info(result.referenceImages[idx])
+          : logger.info('No reference image.');
       }
-    }
+    );
+    return result;
   }
 }
