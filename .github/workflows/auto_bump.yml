@@ -1,7 +1,7 @@
 on:	
   schedule:	
     # * is a special character in YAML so you have to quote this string	
-    - cron:  '20 12 * * 5'	
+    - cron:  '33 12 * * 5'	
 name: auto bump	
 jobs:	
   tests:	
@@ -32,15 +32,17 @@ jobs:
     name: 'Auto bump'	
     runs-on: ubuntu-latest	
     steps:	
-      - uses: actions/checkout@v2	
-        with:	
-          ref: develop	
       - name: get master	
         uses: actions/checkout@v2	
         with:	
           ref: master	
-      - name: merge develop into master	
-        run: git merge develop --no-edit	
+      - name: Merge to uat branch
+        uses: devmasx/merge-branch@v1.1.0
+        with:
+          type: now
+          target_branch: 'develop'
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}	
       - name: npm cache	
         id: npm-cache	
         uses: actions/cache@v1	
