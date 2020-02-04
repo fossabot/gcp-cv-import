@@ -219,11 +219,11 @@ Copyright 2019
 Copyright 2018
 ** fast-text-encoding; version 1.0.0 -- https://github.com/samthor/fast-text-encoder#readme
 Copyright 2017 Sam Thorogood.
-** gaxios; version 2.2.0 -- https://github.com/JustinBeckwith/gaxios#readme
-Copyright 2018, Google, LLC.
+** gaxios; version 2.2.2 -- https://github.com/JustinBeckwith/gaxios#readme
+Copyright 2018 Google LLC
 ** gcp-metadata; version 3.3.0 -- https://github.com/googleapis/gcp-metadata#readme
 Copyright 2018 Google LLC
-** google-auth-library; version 5.7.0 -- https://github.com/googleapis/google-auth-library-nodejs#readme
+** google-auth-library; version 5.9.1 -- https://github.com/googleapis/google-auth-library-nodejs#readme
 Copyright 2012 Google LLC
 Copyright 2013 Google LLC
 Copyright 2014 Google LLC
@@ -232,6 +232,7 @@ Copyright 2017 Google LLC
 Copyright 2018 Google LLC
 Copyright 2019 Google LLC
 ** long; version 4.0.0 -- https://github.com/dcodeIO/long.js#readme
+
 
                                  Apache License
                            Version 2.0, January 2004
@@ -413,7 +414,7 @@ Copyright 2019 Google LLC
    APPENDIX: How to apply the Apache License to your work.
 
       To apply the Apache License to your work, attach the following
-      boilerplate notice, with the fields enclosed by brackets "{}"
+      boilerplate notice, with the fields enclosed by brackets "[]"
       replaced with your own identifying information. (Don't include
       the brackets!)  The text should be enclosed in the appropriate
       comment syntax for the file format. We also recommend that a
@@ -421,7 +422,7 @@ Copyright 2019 Google LLC
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright {yyyy} {name of copyright owner}
+   Copyright [yyyy] [name of copyright owner]
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -765,9 +766,6 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ------
 
-** debug; version 3.2.6 -- https://github.com/visionmedia/debug#readme
-Copyright (c) 2014 TJ Holowaychuk <tj@vision-media.ca>
-Copyright (c) 2014-2017 TJ Holowaychuk <tj@vision-media.ca>
 ** debug; version 4.1.1 -- https://github.com/visionmedia/debug#readme
 Copyright (c) 2014 TJ Holowaychuk <tj@vision-media.ca>
 Copyright (c) 2014-2017 TJ Holowaychuk <tj@vision-media.ca>
@@ -795,9 +793,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ------
 
-** jwa; version 1.4.1 -- https://github.com/brianloveswords/node-jwa#readme
+** jwa; version 2.0.0 -- https://github.com/brianloveswords/node-jwa#readme
 Copyright (c) 2013 Brian J. Brennan
-** jws; version 3.2.2 -- https://github.com/brianloveswords/node-jws#readme
+** jws; version 4.0.0 -- https://github.com/brianloveswords/node-jws#readme
 Copyright (c) 2013 Brian J. Brennan
 Copyright (c) 2013-2015 Brian J. Brennan
 
@@ -822,33 +820,7 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEAL
 
 ------
 
-** es6-promise; version 4.2.8 -- https://github.com/stefanpenner/es6-promise
-Copyright (c) 2014 Yehuda Katz, Tom Dale, Stefan Penner and contributors
-
-Copyright (c) 2014 Yehuda Katz, Tom Dale, Stefan Penner and contributors
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
-of the Software, and to permit persons to whom the Software is furnished to do
-so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-
-------
-
-** readable-stream; version 2.3.6 -- https://github.com/nodejs/readable-stream#readme
+** readable-stream; version 2.3.7 -- https://github.com/nodejs/readable-stream#readme
 Copyright Joyent, Inc. and other Node contributors.
 ** string_decoder; version 1.1.1 -- https://github.com/nodejs/string_decoder
 Copyright Joyent, Inc. and other Node contributors.
@@ -995,9 +967,9 @@ SOFTWARE.
 
 ** @types/fs-extra; version 8.0.1 -- 
 Copyright (c) Microsoft Corporation.
-** @types/long; version 4.0.0 -- 
+** @types/long; version 4.0.1 -- 
 Copyright (c) Microsoft Corporation.
-** @types/node; version 13.1.6 -- 
+** @types/node; version 13.5.3 -- 
 Copyright (c) Microsoft Corporation.
 ** @types/node; version 10.17.13 -- 
 Copyright (c) Microsoft Corporation.
@@ -1110,10 +1082,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ------
 
-** google-p12-pem; version 2.0.3 -- https://github.com/google/google-p12-pem#readme
+** google-p12-pem; version 2.0.4 -- https://github.com/google/google-p12-pem#readme
 Copyright 2018 Google LLC
 Copyright (c) 2014 Ryan Seys
-** gtoken; version 4.1.3 -- https://github.com/google/node-gtoken#readme
+** gtoken; version 4.1.4 -- https://github.com/google/node-gtoken#readme
 Copyright 2018 Google LLC
 Copyright (c) 2014 Ryan Seys
 
@@ -1171,10 +1143,9 @@ THE SOFTWARE.
 
 ------
 
-** agent-base; version 4.3.0 -- https://github.com/TooTallNate/node-agent-base#readme
+** agent-base; version 5.1.1 -- https://github.com/TooTallNate/node-agent-base#readme
 Copyright (c) 2013 Nathan Rajlich <nathan@tootallnate.net>
-** es6-promisify; version 5.0.0 -- https://github.com/digitaldesignlabs/es6-promisify#readme
-** https-proxy-agent; version 3.0.1 -- https://github.com/TooTallNate/node-https-proxy-agent#readme
+** https-proxy-agent; version 4.0.0 -- https://github.com/TooTallNate/node-https-proxy-agent#readme
 Copyright (c) 2013 Nathan Rajlich <nathan@tootallnate.net>
 ** isarray; version 1.0.0 -- https://github.com/juliangruber/isarray
 Copyright (c) 2013 Julian Gruber <julian@juliangruber.com>
