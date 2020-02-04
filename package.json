@@ -51,7 +51,7 @@
     "@liftr/tscov": "1.4.4",
     "@types/jest": "25.1.1",
     "@types/node": "13.7.0",
-    "@typescript-eslint/eslint-plugin": "2.18.0",
+    "@typescript-eslint/eslint-plugin": "2.19.0",
     "@typescript-eslint/parser": "2.18.0",
     "commitizen": "4.0.3",
     "cz-conventional-changelog": "3.1.0",
