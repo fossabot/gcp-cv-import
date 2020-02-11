@@ -4,20 +4,20 @@
 
 Package to [bulk import your GCP Cloud vision product set](https://cloud.google.com/vision/product-search/docs/create-product-set#using_bulk_import_to_create_a_product_set_with_products).
 
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=matt-riley/gcp-cv-import)](https://dependabot.com) [![npm](https://img.shields.io/npm/dm/@matt-riley/gcp-cv-import?style=plastic)](https://www.npmjs.com/package/@matt-riley/gcp-cv-import) [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/matt-riley/gcp-cv-import.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/matt-riley/gcp-cv-import/context:javascript) [![Maintainability](https://api.codeclimate.com/v1/badges/e344678c9b5207782ca4/maintainability)](https://codeclimate.com/github/matt-riley/gcp-cv-import/maintainability)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=ALLCAPSDEV/gcp-cv-import)](https://dependabot.com) [![npm](https://img.shields.io/npm/dm/@ALLCAPSDEV/gcp-cv-import?style=plastic)](https://www.npmjs.com/package/@ALLCAPSDEV/gcp-cv-import) [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/ALLCAPSDEV/gcp-cv-import.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ALLCAPSDEV/gcp-cv-import/context:javascript) [![Maintainability](https://api.codeclimate.com/v1/badges/e344678c9b5207782ca4/maintainability)](https://codeclimate.com/github/ALLCAPSDEV/gcp-cv-import/maintainability)
 
 ## Usage
 
 Install locally using `npm`
 
 ```bash
-npm i -s @matt-riley/gcp-cv-import
+npm i -s @ALLCAPSDEV/gcp-cv-import
 ```
 
 Then within your code:
 
 ```typescript
-import ImportProductSet from '@matt-riley/gcp-cv-import';
+import ImportProductSet from '@ALLCAPSDEV/gcp-cv-import';
 
 const importPrdSet = new ImportProductSet({
   projectId: 'some-gcp-project',
