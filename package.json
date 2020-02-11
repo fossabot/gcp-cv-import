@@ -1,5 +1,5 @@
 {
-  "name": "@matt-riley/gcp-cv-import",
+  "name": "@allcapsdev/gcp-cv-import",
   "version": "0.0.8",
   "description": "",
   "main": "./lib/index.js",
@@ -36,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matt-riley/gcp-cv-import.git"
+    "url": "git+https://github.com/ALLCAPSDEV/gcp-cv-import.git"
   },
   "keywords": [
     "Google Cloud Vision Product Search"
@@ -44,9 +44,9 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/matt-riley/gcp-cv-import/issues"
+    "url": "https://github.com/ALLCAPSDEV/gcp-cv-import/issues"
   },
-  "homepage": "https://github.com/matt-riley/gcp-cv-import#readme",
+  "homepage": "https://github.com/ALLCAPSDEV/gcp-cv-import#readme",
   "devDependencies": {
     "@arkweid/lefthook": "0.7.1",
     "@commitlint/cli": "8.3.5",
