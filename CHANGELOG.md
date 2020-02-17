@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.10](https://github.com/ALLCAPSDEV/gcp-cv-import/compare/v0.0.9...v0.0.10) (2020-02-17)
+
+### Bug Fixes
+
+- **missed the full stop:** missed a fullstop in the scope ([a663cb2](https://github.com/ALLCAPSDEV/gcp-cv-import/commit/a663cb25dfb35d26eedd770e923db11014e2ff64))
+
 ### [0.0.9](https://github.com/ALLCAPSDEV/gcp-cv-import/compare/v0.0.8...v0.0.9) (2020-02-11)
 
 ### [0.0.8](https://github.com/ALLCAPSDEV/gcp-cv-import/compare/v0.0.7...v0.0.8) (2020-02-10)
