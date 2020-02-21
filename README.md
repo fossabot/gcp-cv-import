@@ -11,13 +11,13 @@ Package to [bulk import your GCP Cloud vision product set](https://cloud.google.
 Install locally using `npm`
 
 ```bash
-npm i -s @ALLCAPSDEV/gcp-cv-import
+npm i -s @allcapsdev/gcp-cv-import
 ```
 
 Then within your code:
 
 ```typescript
-import ImportProductSet from '@ALLCAPSDEV/gcp-cv-import';
+import ImportProductSet from '@allcapsdev/gcp-cv-import';
 
 const importPrdSet = new ImportProductSet({
   projectId: 'some-gcp-project',
