@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.11](https://github.com/ALLCAPSDEV/gcp-cv-import/compare/v0.0.10...v0.0.11) (2020-02-25)
+
+### Bug Fixes
+
+- **package.json:** the full stop of DOOOOOOM! ([507501c](https://github.com/ALLCAPSDEV/gcp-cv-import/commit/507501c8f8d8a1bd6eef9fc01b4feff2b7286d6e))
+
 ### [0.0.10](https://github.com/ALLCAPSDEV/gcp-cv-import/compare/v0.0.9...v0.0.10) (2020-02-17)
 
 ### Bug Fixes
