@@ -79,7 +79,7 @@
     "webpack-node-externals": "1.7.2"
   },
   "dependencies": {
-    "@google-cloud/vision": "1.9.0"
+    "@google-cloud/vision": "1.10.0"
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
