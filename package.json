@@ -1,6 +1,6 @@
 {
   "name": "@allcapsdev/gcp-cv-import",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "",
   "main": "./lib/index.js",
   "private": false,
@@ -54,9 +54,9 @@
     "@liftr/tscov": "1.4.5",
     "@size-limit/preset-small-lib": "4.0.0",
     "@types/jest": "25.1.4",
-    "@types/node": "13.9.0",
-    "@typescript-eslint/eslint-plugin": "2.22.0",
-    "@typescript-eslint/parser": "2.22.0",
+    "@types/node": "13.9.1",
+    "@typescript-eslint/eslint-plugin": "2.24.0",
+    "@typescript-eslint/parser": "2.24.0",
     "commitizen": "4.0.3",
     "cz-conventional-changelog": "3.1.0",
     "eslint": "6.8.0",
@@ -72,14 +72,14 @@
     "ts-jest": "25.2.1",
     "ts-loader": "6.2.1",
     "ts-node": "8.6.2",
-    "typedoc": "0.16.11",
+    "typedoc": "0.17.1",
     "typescript": "3.8.3",
     "webpack": "4.42.0",
     "webpack-cli": "^3.3.10",
     "webpack-node-externals": "1.7.2"
   },
   "dependencies": {
-    "@google-cloud/vision": "1.10.0"
+    "@google-cloud/vision": "1.11.0"
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",

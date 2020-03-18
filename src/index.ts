@@ -1,9 +1,6 @@
 import vision from '@google-cloud/vision';
 import { ImportProductSetOptions } from './interfaces/ImportProductSetOptions';
-import { ImportProductSetResultStatus } from './interfaces/ImportProductSetResultStatus';
-import { ImportProductSetResult } from './interfaces/ImportProductSetResult';
-import { ImportProductSetResponse } from './interfaces/ImportProductSetResponse';
-import { ImportProductSetOperation } from './interfaces/ImportProductSetOperation';
+import { google } from '@google-cloud/vision/build/protos/protos';
 export default class ImportProductSet {
   /**
    * Creates a private client of vision.ProductSearchClient.
@@ -21,14 +18,11 @@ export default class ImportProductSet {
     this.options = options;
   }
 
-  async import(): Promise<ImportProductSetResult> {
+  async import(): Promise<google.cloud.vision.v1.IImportProductSetsResponse> {
     const { projectId, location, csvUri, logger } = this.options;
     const client = this.client;
     const parentLocation = client.locationPath(projectId, location);
-    const [response, operation]: [
-      ImportProductSetResponse,
-      ImportProductSetOperation
-    ] = await client.importProductSets({
+    const [response, operation] = await client.importProductSets({
       parent: parentLocation,
       inputConfig: {
         gcsSource: {
@@ -36,19 +30,17 @@ export default class ImportProductSet {
         }
       }
     });
-    logger.info(`Processing operation name ${operation.name}`);
+    logger.info(`Processing operation name ${operation?.name}`);
     const [result] = await response.promise();
     logger.info('Processing complete');
     logger.info('Processing results:');
 
-    result.statuses.forEach(
-      (status: ImportProductSetResultStatus, idx: number) => {
-        logger.info(`Status of processing line ${idx} of the csv.`);
-        status.code === 0
-          ? logger.info(result.referenceImages[idx])
-          : logger.info('No reference image.');
-      }
-    );
+    result.statuses?.forEach((status, idx: number) => {
+      logger.info(`Status of processing line ${idx} of the csv.`);
+      status.code === 0 && result.referenceImages
+        ? logger.info(result.referenceImages[idx])
+        : logger.info('No reference image.');
+    });
     return result;
   }
 }
