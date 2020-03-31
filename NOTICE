@@ -208,22 +208,22 @@ Apache License
 
 ** @google-cloud/promisify; version 1.0.4 -- https://github.com/googleapis/nodejs-promisify#readme
 Copyright 2014 Google LLC
-** @google-cloud/vision; version 1.8.0 -- https://github.com/googleapis/nodejs-vision#readme
+** @google-cloud/vision; version 1.11.0 -- https://github.com/googleapis/nodejs-vision#readme
+Copyright 2017 Google LLC
 Copyright 2017 Google Inc.
-Copyright 2017, Google LLC
 Copyright 2018 Google Inc.
 Copyright 2019 Google LLC.
-** @grpc/grpc-js; version 0.6.15 -- https://grpc.io/
+** @grpc/grpc-js; version 0.6.18 -- https://grpc.io/
 Copyright 2019
 ** @grpc/proto-loader; version 0.5.3 -- https://grpc.io/
 Copyright 2018
-** fast-text-encoding; version 1.0.0 -- https://github.com/samthor/fast-text-encoder#readme
+** fast-text-encoding; version 1.0.1 -- 
 Copyright 2017 Sam Thorogood.
-** gaxios; version 2.2.2 -- https://github.com/JustinBeckwith/gaxios#readme
+** gaxios; version 2.3.2 -- https://github.com/googleapis/gaxios#readme
 Copyright 2018 Google LLC
-** gcp-metadata; version 3.3.0 -- https://github.com/googleapis/gcp-metadata#readme
+** gcp-metadata; version 3.5.0 -- https://github.com/googleapis/gcp-metadata#readme
 Copyright 2018 Google LLC
-** google-auth-library; version 5.9.1 -- https://github.com/googleapis/google-auth-library-nodejs#readme
+** google-auth-library; version 5.10.1 -- https://github.com/googleapis/google-auth-library-nodejs#readme
 Copyright 2012 Google LLC
 Copyright 2013 Google LLC
 Copyright 2014 Google LLC
@@ -231,6 +231,14 @@ Copyright 2015 Google LLC
 Copyright 2017 Google LLC
 Copyright 2018 Google LLC
 Copyright 2019 Google LLC
+** google-gax; version 1.14.2 -- https://github.com/googleapis/gax-nodejs#readme
+Copyright 2008 Google Inc.
+Copyright 2016 Google Inc.
+Copyright 2017 Google Inc.
+Copyright 2018 Google Inc.
+Copyright 2018 Google LLC.
+Copyright 2019 Google LLC.
+Copyright (c) 2015, Google Inc.
 ** long; version 4.0.0 -- https://github.com/dcodeIO/long.js#readme
 
 
@@ -439,46 +447,6 @@ Copyright 2019 Google LLC
 
 ------
 
-** google-gax; version 1.13.0 -- https://github.com/googleapis/gax-nodejs#readme
-Copyright 2008 Google Inc.
-Copyright 2016 Google Inc.
-Copyright 2017 Google Inc.
-Copyright 2018 Google Inc.
-Copyright 2018 Google LLC.
-Copyright 2019 Google LLC.
-Copyright 2019, Google LLC
-Copyright 2016, Google Inc.
-Copyright (c) 2015, Google Inc.
-
-Copyright 2016, Google Inc.
-All rights reserved.
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are
-met:
-    * Redistributions of source code must retain the above copyright
-notice, this list of conditions and the following disclaimer.
-    * Redistributions in binary form must reproduce the above
-copyright notice, this list of conditions and the following disclaimer
-in the documentation and/or other materials provided with the
-distribution.
-    * Neither the name of Google Inc. nor the names of its
-contributors may be used to endorse or promote products derived from
-this software without specific prior written permission.
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-
-------
-
 ** buffer-equal-constant-time; version 1.0.1 -- 
 (c) 2013 GoInstant Inc., a salesforce.com company
 Copyright (c) 2013, GoInstant Inc., a salesforce.com company
@@ -550,15 +518,11 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ------
 
-** protobufjs; version 6.8.8 -- http://dcode.io/protobuf.js
+** protobufjs; version 6.8.9 -- http://dcode.io/protobuf.js
 (c) 2016, daniel wirtz
 Copyright 2014, Google Inc.
 Copyright (c) 2016 Chad Engler
 Copyright (c) 2016, Daniel Wirtz
-Copyright (c) 2014 KARASZI Istvan
-(c) Sindre Sorhus (https://sindresorhus.com)
-Copyright (c) 2011-2017 KARASZI Istvan <github@spam.raszi.hu>
-Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 
 This license applies to all parts of protobuf.js except those files
 either explicitly including or referencing a different license or
@@ -609,9 +573,6 @@ Copyright (c) Isaac Z. Schlueter and Contributors
 Copyright (c) Isaac Z. Schlueter and Contributors
 ** semver; version 6.3.0 -- https://github.com/npm/node-semver#readme
 Copyright Isaac Z.
-Copyright Isaac Z. Schlueter
-Copyright (c) Isaac Z. Schlueter and Contributors
-** semver; version 7.1.1 -- https://github.com/npm/node-semver#readme
 Copyright Isaac Z. Schlueter
 Copyright (c) Isaac Z. Schlueter and Contributors
 ** wrappy; version 1.0.2 -- https://github.com/npm/wrappy
@@ -965,13 +926,13 @@ SOFTWARE.
 
 ------
 
-** @types/fs-extra; version 8.0.1 -- 
+** @types/fs-extra; version 8.1.0 -- 
 Copyright (c) Microsoft Corporation.
 ** @types/long; version 4.0.1 -- 
 Copyright (c) Microsoft Corporation.
-** @types/node; version 13.5.3 -- 
+** @types/node; version 10.17.17 -- 
 Copyright (c) Microsoft Corporation.
-** @types/node; version 10.17.13 -- 
+** @types/node; version 13.9.4 -- 
 Copyright (c) Microsoft Corporation.
 
     MIT License
@@ -1143,9 +1104,9 @@ THE SOFTWARE.
 
 ------
 
-** agent-base; version 5.1.1 -- https://github.com/TooTallNate/node-agent-base#readme
+** agent-base; version 6.0.0 -- https://github.com/TooTallNate/node-agent-base#readme
 Copyright (c) 2013 Nathan Rajlich <nathan@tootallnate.net>
-** https-proxy-agent; version 4.0.0 -- https://github.com/TooTallNate/node-https-proxy-agent#readme
+** https-proxy-agent; version 5.0.0 -- https://github.com/TooTallNate/node-https-proxy-agent#readme
 Copyright (c) 2013 Nathan Rajlich <nathan@tootallnate.net>
 ** isarray; version 1.0.0 -- https://github.com/juliangruber/isarray
 Copyright (c) 2013 Julian Gruber <julian@juliangruber.com>
