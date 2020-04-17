@@ -213,6 +213,8 @@ Copyright 2017 Google LLC
 Copyright 2017 Google Inc.
 Copyright 2018 Google Inc.
 Copyright 2019 Google LLC.
+** @grpc/grpc-js; version 0.7.7 -- https://grpc.io/
+Copyright 2019
 ** @grpc/proto-loader; version 0.5.4 -- https://grpc.io/
 Copyright 2018
 ** fast-text-encoding; version 1.0.1 -- 
@@ -229,6 +231,14 @@ Copyright 2015 Google LLC
 Copyright 2017 Google LLC
 Copyright 2018 Google LLC
 Copyright 2019 Google LLC
+** google-gax; version 1.15.2 -- https://github.com/googleapis/gax-nodejs#readme
+Copyright 2008 Google Inc.
+Copyright 2016 Google Inc.
+Copyright 2017 Google Inc.
+Copyright 2018 Google Inc.
+Copyright 2018 Google LLC.
+Copyright 2019 Google LLC.
+Copyright (c) 2015, Google Inc.
 ** long; version 4.0.0 -- https://github.com/dcodeIO/long.js#readme
 
 
@@ -1781,11 +1791,4 @@ TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY
 YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER
 PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGES.
-
-
-
-------
-
-** @grpc/grpc-js; version 0.7.7 -- 
-** google-gax; version 1.15.2 -- 
 
