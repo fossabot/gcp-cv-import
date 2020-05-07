@@ -99,5 +99,10 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "standard-version": {
+    "skip": {
+      "tag": true
+    }
   }
 }
