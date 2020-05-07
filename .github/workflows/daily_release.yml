@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: "40 1 * * 1-5"
+    - cron: "45 1 * * 1-5"
 jobs:
   release:
     name: Create a release
@@ -19,6 +19,8 @@ jobs:
       - name: Install Deps if no cache
         if: steps.npm-cache.outputs.cache-hit != 'true'
         run: npm ci --silent
+      - run: git config --local user.email "matt@mattriley.me"
+      - run: git config --local user.name "Matt Riley"
       - run: npm run release
       - run: git push --follow-tags origin master
       - run: git checkout develop
