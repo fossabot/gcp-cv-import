@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: "45 1 * * 1-5"
+    - cron: "25 2 * * 1-5"
 jobs:
   release:
     name: Create a release
@@ -22,7 +22,5 @@ jobs:
       - run: git config --local user.email "matt@mattriley.me"
       - run: git config --local user.name "Matt Riley"
       - run: npm run release
+      - run: git remote set-url origin https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git
       - run: git push --follow-tags origin master
-      - run: git checkout develop
-      - run: git merge master
-      - run: git push origin develop
