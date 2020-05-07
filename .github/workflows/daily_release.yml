@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: "35 2 * * 1-5"
+    - cron: '00 12 * * 1-5'
 jobs:
   release:
     name: Create a release
@@ -8,10 +8,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: git fetch --prune --unshallow
-      - run: git checkout master
+      - run: git checkout develop
       - run: git config --local user.email "matt@mattriley.me"
       - run: git config --local user.name "Matt Riley"
-      - run: git merge develop
+      - run: git checkout -b release
       - name: npm cache
         id: npm-cache
         uses: actions/cache@v1
@@ -23,4 +23,4 @@ jobs:
         run: npm ci --silent
       - run: npm run release
       - run: git remote set-url origin https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git
-      - run: git push --follow-tags origin master
+      - run: git push origin release
