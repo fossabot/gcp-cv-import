@@ -1,7 +1,7 @@
 name: Daily Release
 on:
   schedule:
-    - cron: "00 10 * * 1-5"
+    - cron: '30 14 * * 1-5'
 jobs:
   build-release:
     name: Create a release
@@ -13,7 +13,7 @@ jobs:
           git config --local user.email "matt@mattriley.me"
           git config --local user.name "Matt Riley"
       - run: git checkout master
-      - run: git merge develop 
+      - run: git merge develop
       - name: Install Deps
         run: npm ci --silent
       - run: npm run release
@@ -25,6 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - run: git fetch --prune --unshallow
       - run: git checkout master
       - uses: actions/setup-node@v1
         with:
@@ -40,6 +41,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - run: git fetch --prune --unshallow
       - run: git checkout master
       - uses: actions/setup-node@v1
         with:
@@ -50,17 +52,19 @@ jobs:
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-  
+
   create-pr:
     name: Create PR on push to release
     needs: build-release
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - run: git fetch --prune --unshallow
       - run: git checkout master
       - name: pull-request
         uses: repo-sync/pull-request@v2
         with:
+          source_branch: 'master'
           destination_branch: 'develop'
           pr_title: 'Daily Release'
           pr_body: ':tada: *An automated PR*'

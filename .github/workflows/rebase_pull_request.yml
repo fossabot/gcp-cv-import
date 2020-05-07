@@ -6,11 +6,15 @@ on:
       - synchronize
       - opened
       - edited
+  check_suite:
+    types:
+      - completed
 jobs:
   automerge:
     runs-on: ubuntu-latest
     steps:
       - name: automerge
-        uses: pascalgn/automerge-action@v0.4.3
+        uses: pascalgn/automerge-action@v0.8.1
         env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+          MERGE_METHOD: 'rebase'
