@@ -7,9 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
-      - run: git checkout develop && git pull
-      - run: git checkout master && git pull
+      - run: git fetch --prune --unshallow
+      - run: git checkout master
       - run: git merge develop 
       - name: npm cache
         id: npm-cache
