@@ -5,6 +5,7 @@
 Package to [bulk import your GCP Cloud vision product set](https://cloud.google.com/vision/product-search/docs/create-product-set#using_bulk_import_to_create_a_product_set_with_products).
 
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=ALLCAPSDEV/gcp-cv-import)](https://dependabot.com) [![npm](https://img.shields.io/npm/dm/@allcapsdev/gcp-cv-import?style=plastic)](https://www.npmjs.com/package/@allcapsdev/gcp-cv-import) [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/ALLCAPSDEV/gcp-cv-import.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ALLCAPSDEV/gcp-cv-import/context:javascript) [![Maintainability](https://api.codeclimate.com/v1/badges/e344678c9b5207782ca4/maintainability)](https://codeclimate.com/github/ALLCAPSDEV/gcp-cv-import/maintainability)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FALLCAPSDEV%2Fgcp-cv-import.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FALLCAPSDEV%2Fgcp-cv-import?ref=badge_shield)
 
 ## Usage
 
@@ -39,3 +40,7 @@ By default `logger` will use the standard `console` to log the results, however 
 - More tests & better mocking.
 
 - Improve the docs
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FALLCAPSDEV%2Fgcp-cv-import.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FALLCAPSDEV%2Fgcp-cv-import?ref=badge_large)
