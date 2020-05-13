@@ -213,11 +213,11 @@ Copyright 2017 Google LLC
 Copyright 2017 Google Inc.
 Copyright 2018 Google Inc.
 Copyright 2019 Google LLC.
-** @grpc/grpc-js; version 0.7.7 -- https://grpc.io/
+** @grpc/grpc-js; version 0.7.9 -- https://grpc.io/
 Copyright 2019
 ** @grpc/proto-loader; version 0.5.4 -- https://grpc.io/
 Copyright 2018
-** fast-text-encoding; version 1.0.1 -- 
+** fast-text-encoding; version 1.0.2 -- 
 Copyright 2017 Sam Thorogood.
 ** gaxios; version 2.3.4 -- https://github.com/googleapis/gaxios#readme
 Copyright 2018 Google LLC
@@ -518,7 +518,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ------
 
-** protobufjs; version 6.8.9 -- http://dcode.io/protobuf.js
+** protobufjs; version 6.9.0 -- http://dcode.io/protobuf.js
 (c) 2016, daniel wirtz
 Copyright 2014, Google Inc.
 Copyright (c) 2016 Chad Engler
@@ -930,8 +930,6 @@ SOFTWARE.
 Copyright (c) Microsoft Corporation.
 ** @types/long; version 4.0.1 -- 
 Copyright (c) Microsoft Corporation.
-** @types/node; version 10.17.19 -- 
-Copyright (c) Microsoft Corporation.
 
     MIT License
 
@@ -984,7 +982,7 @@ SOFTWARE.**
 
 ------
 
-** mime; version 2.4.4 -- https://github.com/broofa/node-mime#readme
+** mime; version 2.4.5 -- https://github.com/broofa/node-mime#readme
 Copyright (c) 2010 Benjamin Thomas, Robert Kieffer
 
 The MIT License (MIT)
